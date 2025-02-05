@@ -144,7 +144,7 @@ terraform apply plan.tfplan
 
 Test the agent in the AWS Bedrock console.
 
-![bedrock-agent-console](./images/bedrock-agent-console.png)
+![bedrock-agent-console](./bedrock_agent_console.png)
 
 ## Resources
 
