@@ -1,0 +1,542 @@
+{
+  "Links": [
+    {
+      "Rel": "Current",
+      "Href": "https://api.cat.com/telematics/iso15143/fleet/1"
+    },
+    {
+      "Rel": "Next",
+      "Href": "https://api.cat.com/telematics/iso15143/fleet/2"
+    },
+    {
+      "Rel": "Last",
+      "Href": "https://api.cat.com/telematics/iso15143/fleet/2"
+    },
+    {
+      "Rel": "First",
+      "Href": "https://api.cat.com/telematics/iso15143/fleet/1"
+    }
+  ],
+  "Equipment": [
+    {
+      "EquipmentHeader": {
+        "OEMName": "CAT",
+        "Model": "M815",
+        "EquipmentID": "EQ001",
+        "SerialNumber": "SN7929"
+      },
+      "Location": {
+        "Latitude": 40.760128,
+        "Longitude": -113.348178,
+        "Altitude": 3123.498,
+        "AltitudeUnits": "metre",
+        "Datetime": "2022-06-10T04:14:45.000Z"
+      },
+      "CumulativeIdleHours": {
+        "Hour": 825.3700000000001,
+        "Datetime": "2022-06-10T04:14:45.000Z"
+      },
+      "CumulativeOperatingHours": {
+        "Hour": 8253.7,
+        "Datetime": "2022-06-10T04:14:45.000Z"
+      },
+      "CumulativePayloadTotals": {
+        "PayloadUnits": "kilogram",
+        "Payload": 309552074132,
+        "Datetime": "2020-01-24T18:21:07.301Z"
+      },
+      "Distance": {
+        "OdometerUnits": "kilometre",
+        "Odometer": 14361.3,
+        "Datetime": "2022-06-10T04:14:45.000Z"
+      },
+      "EngineStatus": {
+        "EngineNumber": "EN2432",
+        "Running": true,
+        "Datetime": "2022-06-10T04:21:45.000Z"
+      },
+      "FuelUsed": {
+        "FuelUnits": "litre",
+        "FuelConsumed": 51617,
+        "Datetime": "2022-06-10T04:14:45.000Z"
+      },
+      "FuelUsedLast24": {
+        "FuelUnits": "litre",
+        "FuelConsumed": 124,
+        "Datetime": "2022-06-09T04:14:45.000Z"
+      },
+      "FuelRemaining": {
+        "Percent": 33.1,
+        "Datetime": "2022-06-10T04:14:45.000Z"
+      }
+    },
+    {
+      "EquipmentHeader": {
+        "OEMName": "CAT",
+        "Model": "M409",
+        "EquipmentID": "EQ002",
+        "SerialNumber": "SN51459"
+      },
+      "Location": {
+        "Latitude": 38.460214,
+        "Longitude": -70.537891,
+        "Altitude": 1439.069,
+        "AltitudeUnits": "metre",
+        "Datetime": "2022-06-10T04:14:45.000Z"
+      },
+      "CumulativeIdleHours": {
+        "Hour": 781.47,
+        "Datetime": "2022-06-10T04:14:45.000Z"
+      },
+      "CumulativeOperatingHours": {
+        "Hour": 7814.7,
+        "Datetime": "2022-06-10T04:14:45.000Z"
+      },
+      "CumulativePayloadTotals": {
+        "PayloadUnits": "kilogram",
+        "Payload": 541041167557,
+        "Datetime": "2021-09-27T06:47:08.664Z"
+      },
+      "Distance": {
+        "OdometerUnits": "kilometre",
+        "Odometer": 14186.6,
+        "Datetime": "2022-06-10T04:14:45.000Z"
+      },
+      "EngineStatus": {
+        "EngineNumber": "EN1157",
+        "Running": false,
+        "Datetime": "2022-06-10T04:21:45.000Z"
+      },
+      "FuelUsed": {
+        "FuelUnits": "litre",
+        "FuelConsumed": 58357,
+        "Datetime": "2022-06-10T04:14:45.000Z"
+      },
+      "FuelUsedLast24": {
+        "FuelUnits": "litre",
+        "FuelConsumed": 279,
+        "Datetime": "2022-06-09T04:14:45.000Z"
+      },
+      "FuelRemaining": {
+        "Percent": 68,
+        "Datetime": "2022-06-10T04:14:45.000Z"
+      }
+    },
+    {
+      "EquipmentHeader": {
+        "OEMName": "CAT",
+        "Model": "M295",
+        "EquipmentID": "EQ003",
+        "SerialNumber": "SN89610"
+      },
+      "Location": {
+        "Latitude": 41.129333,
+        "Longitude": -102.358503,
+        "Altitude": 4396.123,
+        "AltitudeUnits": "metre",
+        "Datetime": "2022-06-10T04:14:45.000Z"
+      },
+      "CumulativeIdleHours": {
+        "Hour": 1402.46,
+        "Datetime": "2022-06-10T04:14:45.000Z"
+      },
+      "CumulativeOperatingHours": {
+        "Hour": 7012.3,
+        "Datetime": "2022-06-10T04:14:45.000Z"
+      },
+      "CumulativePayloadTotals": {
+        "PayloadUnits": "kilogram",
+        "Payload": 934473631048,
+        "Datetime": "2020-01-14T01:56:08.305Z"
+      },
+      "Distance": {
+        "OdometerUnits": "kilometre",
+        "Odometer": 14249.6,
+        "Datetime": "2022-06-10T04:14:45.000Z"
+      },
+      "EngineStatus": {
+        "EngineNumber": "EN1277",
+        "Running": true,
+        "Datetime": "2022-06-10T04:21:45.000Z"
+      },
+      "FuelUsed": {
+        "FuelUnits": "litre",
+        "FuelConsumed": 83628,
+        "Datetime": "2022-06-10T04:14:45.000Z"
+      },
+      "FuelUsedLast24": {
+        "FuelUnits": "litre",
+        "FuelConsumed": 237,
+        "Datetime": "2022-06-09T04:14:45.000Z"
+      },
+      "FuelRemaining": {
+        "Percent": 80.9,
+        "Datetime": "2022-06-10T04:14:45.000Z"
+      }
+    },
+    {
+      "EquipmentHeader": {
+        "OEMName": "CAT",
+        "Model": "M736",
+        "EquipmentID": "EQ004",
+        "SerialNumber": "SN9991"
+      },
+      "Location": {
+        "Latitude": 38.130752,
+        "Longitude": -114.584784,
+        "Altitude": 2879.243,
+        "AltitudeUnits": "metre",
+        "Datetime": "2022-06-10T04:14:45.000Z"
+      },
+      "CumulativeIdleHours": {
+        "Hour": 1019.5799999999999,
+        "Datetime": "2022-06-10T04:14:45.000Z"
+      },
+      "CumulativeOperatingHours": {
+        "Hour": 5097.9,
+        "Datetime": "2022-06-10T04:14:45.000Z"
+      },
+      "CumulativePayloadTotals": {
+        "PayloadUnits": "kilogram",
+        "Payload": 1304260488014,
+        "Datetime": "2020-09-16T00:32:55.264Z"
+      },
+      "Distance": {
+        "OdometerUnits": "kilometre",
+        "Odometer": 12051.8,
+        "Datetime": "2022-06-10T04:14:45.000Z"
+      },
+      "EngineStatus": {
+        "EngineNumber": "EN245",
+        "Running": true,
+        "Datetime": "2022-06-10T04:21:45.000Z"
+      },
+      "FuelUsed": {
+        "FuelUnits": "litre",
+        "FuelConsumed": 60967,
+        "Datetime": "2022-06-10T04:14:45.000Z"
+      },
+      "FuelUsedLast24": {
+        "FuelUnits": "litre",
+        "FuelConsumed": 146,
+        "Datetime": "2022-06-09T04:14:45.000Z"
+      },
+      "FuelRemaining": {
+        "Percent": 46,
+        "Datetime": "2022-06-10T04:14:45.000Z"
+      }
+    },
+    {
+      "EquipmentHeader": {
+        "OEMName": "CAT",
+        "Model": "M291",
+        "EquipmentID": "EQ005",
+        "SerialNumber": "SN32251"
+      },
+      "Location": {
+        "Latitude": 39.535695,
+        "Longitude": -91.229147,
+        "Altitude": 3369.859,
+        "AltitudeUnits": "metre",
+        "Datetime": "2022-06-10T04:14:45.000Z"
+      },
+      "CumulativeIdleHours": {
+        "Hour": 1773.3400000000001,
+        "Datetime": "2022-06-10T04:14:45.000Z"
+      },
+      "CumulativeOperatingHours": {
+        "Hour": 8866.7,
+        "Datetime": "2022-06-10T04:14:45.000Z"
+      },
+      "CumulativePayloadTotals": {
+        "PayloadUnits": "kilogram",
+        "Payload": 43165459970,
+        "Datetime": "2020-07-27T06:26:25.434Z"
+      },
+      "Distance": {
+        "OdometerUnits": "kilometre",
+        "Odometer": 7142.4,
+        "Datetime": "2022-06-10T04:14:45.000Z"
+      },
+      "EngineStatus": {
+        "EngineNumber": "EN6868",
+        "Running": true,
+        "Datetime": "2022-06-10T04:21:45.000Z"
+      },
+      "FuelUsed": {
+        "FuelUnits": "litre",
+        "FuelConsumed": 56949,
+        "Datetime": "2022-06-10T04:14:45.000Z"
+      },
+      "FuelUsedLast24": {
+        "FuelUnits": "litre",
+        "FuelConsumed": 271,
+        "Datetime": "2022-06-09T04:14:45.000Z"
+      },
+      "FuelRemaining": {
+        "Percent": 54.7,
+        "Datetime": "2022-06-10T04:14:45.000Z"
+      }
+    },
+    {
+      "EquipmentHeader": {
+        "OEMName": "CAT",
+        "Model": "M514",
+        "EquipmentID": "EQ006",
+        "SerialNumber": "SN43769"
+      },
+      "Location": {
+        "Latitude": 31.258635,
+        "Longitude": -114.39728,
+        "Altitude": 415.908,
+        "AltitudeUnits": "metre",
+        "Datetime": "2022-06-10T04:14:45.000Z"
+      },
+      "CumulativeIdleHours": {
+        "Hour": 1835.5,
+        "Datetime": "2022-06-10T04:14:45.000Z"
+      },
+      "CumulativeOperatingHours": {
+        "Hour": 9177.5,
+        "Datetime": "2022-06-10T04:14:45.000Z"
+      },
+      "CumulativePayloadTotals": {
+        "PayloadUnits": "kilogram",
+        "Payload": 1298922941083,
+        "Datetime": "2021-02-03T02:17:57.280Z"
+      },
+      "Distance": {
+        "OdometerUnits": "kilometre",
+        "Odometer": 9025.5,
+        "Datetime": "2022-06-10T04:14:45.000Z"
+      },
+      "EngineStatus": {
+        "EngineNumber": "EN5273",
+        "Running": true,
+        "Datetime": "2022-06-10T04:21:45.000Z"
+      },
+      "FuelUsed": {
+        "FuelUnits": "litre",
+        "FuelConsumed": 87409,
+        "Datetime": "2022-06-10T04:14:45.000Z"
+      },
+      "FuelUsedLast24": {
+        "FuelUnits": "litre",
+        "FuelConsumed": 235,
+        "Datetime": "2022-06-09T04:14:45.000Z"
+      },
+      "FuelRemaining": {
+        "Percent": 99,
+        "Datetime": "2022-06-10T04:14:45.000Z"
+      }
+    },
+    {
+      "EquipmentHeader": {
+        "OEMName": "CAT",
+        "Model": "M156",
+        "EquipmentID": "EQ007",
+        "SerialNumber": "SN63195"
+      },
+      "Location": {
+        "Latitude": 41.659792,
+        "Longitude": -97.048891,
+        "Altitude": 263.063,
+        "AltitudeUnits": "metre",
+        "Datetime": "2022-06-10T04:14:45.000Z"
+      },
+      "CumulativeIdleHours": {
+        "Hour": 653.89,
+        "Datetime": "2022-06-10T04:14:45.000Z"
+      },
+      "CumulativeOperatingHours": {
+        "Hour": 6538.9,
+        "Datetime": "2022-06-10T04:14:45.000Z"
+      },
+      "CumulativePayloadTotals": {
+        "PayloadUnits": "kilogram",
+        "Payload": 400956490226,
+        "Datetime": "2020-03-04T19:39:29.013Z"
+      },
+      "Distance": {
+        "OdometerUnits": "kilometre",
+        "Odometer": 14853.3,
+        "Datetime": "2022-06-10T04:14:45.000Z"
+      },
+      "EngineStatus": {
+        "EngineNumber": "EN3060",
+        "Running": true,
+        "Datetime": "2022-06-10T04:21:45.000Z"
+      },
+      "FuelUsed": {
+        "FuelUnits": "litre",
+        "FuelConsumed": 59444,
+        "Datetime": "2022-06-10T04:14:45.000Z"
+      },
+      "FuelUsedLast24": {
+        "FuelUnits": "litre",
+        "FuelConsumed": 297,
+        "Datetime": "2022-06-09T04:14:45.000Z"
+      },
+      "FuelRemaining": {
+        "Percent": 29.5,
+        "Datetime": "2022-06-10T04:14:45.000Z"
+      }
+    },
+    {
+      "EquipmentHeader": {
+        "OEMName": "CAT",
+        "Model": "M40",
+        "EquipmentID": "EQ008",
+        "SerialNumber": "SN17786"
+      },
+      "Location": {
+        "Latitude": 42.166411,
+        "Longitude": -79.197061,
+        "Altitude": 3688.339,
+        "AltitudeUnits": "metre",
+        "Datetime": "2022-06-10T04:14:45.000Z"
+      },
+      "CumulativeIdleHours": {
+        "Hour": 1419.3600000000001,
+        "Datetime": "2022-06-10T04:14:45.000Z"
+      },
+      "CumulativeOperatingHours": {
+        "Hour": 7096.8,
+        "Datetime": "2022-06-10T04:14:45.000Z"
+      },
+      "CumulativePayloadTotals": {
+        "PayloadUnits": "kilogram",
+        "Payload": 133737392803,
+        "Datetime": "2021-03-31T04:10:14.138Z"
+      },
+      "Distance": {
+        "OdometerUnits": "kilometre",
+        "Odometer": 9826.7,
+        "Datetime": "2022-06-10T04:14:45.000Z"
+      },
+      "EngineStatus": {
+        "EngineNumber": "EN2687",
+        "Running": true,
+        "Datetime": "2022-06-10T04:21:45.000Z"
+      },
+      "FuelUsed": {
+        "FuelUnits": "litre",
+        "FuelConsumed": 56487,
+        "Datetime": "2022-06-10T04:14:45.000Z"
+      },
+      "FuelUsedLast24": {
+        "FuelUnits": "litre",
+        "FuelConsumed": 120,
+        "Datetime": "2022-06-09T04:14:45.000Z"
+      },
+      "FuelRemaining": {
+        "Percent": 27.4,
+        "Datetime": "2022-06-10T04:14:45.000Z"
+      }
+    },
+    {
+      "EquipmentHeader": {
+        "OEMName": "CAT",
+        "Model": "M787",
+        "EquipmentID": "EQ009",
+        "SerialNumber": "SN46873"
+      },
+      "Location": {
+        "Latitude": 34.671151,
+        "Longitude": -104.562972,
+        "Altitude": 3696.073,
+        "AltitudeUnits": "metre",
+        "Datetime": "2022-06-10T04:14:45.000Z"
+      },
+      "CumulativeIdleHours": {
+        "Hour": 1848.2400000000002,
+        "Datetime": "2022-06-10T04:14:45.000Z"
+      },
+      "CumulativeOperatingHours": {
+        "Hour": 9241.2,
+        "Datetime": "2022-06-10T04:14:45.000Z"
+      },
+      "CumulativePayloadTotals": {
+        "PayloadUnits": "kilogram",
+        "Payload": 1583752058190,
+        "Datetime": "2021-11-23T06:10:20.478Z"
+      },
+      "Distance": {
+        "OdometerUnits": "kilometre",
+        "Odometer": 8503.2,
+        "Datetime": "2022-06-10T04:14:45.000Z"
+      },
+      "EngineStatus": {
+        "EngineNumber": "EN4814",
+        "Running": true,
+        "Datetime": "2022-06-10T04:21:45.000Z"
+      },
+      "FuelUsed": {
+        "FuelUnits": "litre",
+        "FuelConsumed": 94085,
+        "Datetime": "2022-06-10T04:14:45.000Z"
+      },
+      "FuelUsedLast24": {
+        "FuelUnits": "litre",
+        "FuelConsumed": 179,
+        "Datetime": "2022-06-09T04:14:45.000Z"
+      },
+      "FuelRemaining": {
+        "Percent": 97.1,
+        "Datetime": "2022-06-10T04:14:45.000Z"
+      }
+    },
+    {
+      "EquipmentHeader": {
+        "OEMName": "CAT",
+        "Model": "M575",
+        "EquipmentID": "EQ010",
+        "SerialNumber": "SN59738"
+      },
+      "Location": {
+        "Latitude": 30.00383,
+        "Longitude": -106.700577,
+        "Altitude": 3628.652,
+        "AltitudeUnits": "metre",
+        "Datetime": "2022-06-10T04:14:45.000Z"
+      },
+      "CumulativeIdleHours": {
+        "Hour": 530.45,
+        "Datetime": "2022-06-10T04:14:45.000Z"
+      },
+      "CumulativeOperatingHours": {
+        "Hour": 5304.5,
+        "Datetime": "2022-06-10T04:14:45.000Z"
+      },
+      "CumulativePayloadTotals": {
+        "PayloadUnits": "kilogram",
+        "Payload": 685725755076,
+        "Datetime": "2020-06-18T01:52:40.250Z"
+      },
+      "Distance": {
+        "OdometerUnits": "kilometre",
+        "Odometer": 6863.4,
+        "Datetime": "2022-06-10T04:14:45.000Z"
+      },
+      "EngineStatus": {
+        "EngineNumber": "EN5007",
+        "Running": true,
+        "Datetime": "2022-06-10T04:21:45.000Z"
+      },
+      "FuelUsed": {
+        "FuelUnits": "litre",
+        "FuelConsumed": 73835,
+        "Datetime": "2022-06-10T04:14:45.000Z"
+      },
+      "FuelUsedLast24": {
+        "FuelUnits": "litre",
+        "FuelConsumed": 156,
+        "Datetime": "2022-06-09T04:14:45.000Z"
+      },
+      "FuelRemaining": {
+        "Percent": 72.9,
+        "Datetime": "2022-06-10T04:14:45.000Z"
+      }
+    }
+  ]
+}
