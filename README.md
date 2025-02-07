@@ -2,6 +2,27 @@
 
 This repository contains a Terraform configuration for a Bedrock agent and a lambda function that it uses to call an external mock API for a subset of telematics data.
 
+## Background
+
+This repository is part of a series of repositories that I'm creating to test and explore the various features of AWS Bedrock.
+
+| Concept / Example | Repository  |
+|:--|:--|
+| AWS Bedrock + Langchain  | https://github.com/chaserx/aws-llm-basic  |
+| ChromaDB: Document addition and retrieval | https://github.com/chaserx/chroma_simple |
+| ChromaDB: Data embedding and search | https://github.com/chaserx/chroma_langchain_embedding_retrieval |
+| Pinecone Vector DB setup task: index creation  | https://github.com/chaserx/pinecone_quickstart  |
+| Using LangSmith | https://github.com/chaserx/langsmith_simple  |
+| AWS Bedrock Knowledge Bases | https://github.com/chaserx/bedrock_kb_rag  |
+| AWS Bedrock Agents | https://github.com/chaserx/bedrock_agents 👈 You are here |
+
+What I've learned so far:
+
+- If you want to return a precise answer, you can't rely on the model to deduce the answer. You need to either use a tool to call an external API or have a model that can write code to query a database or other data source.
+- Agents can be created using the AWS Bedrock console or using Terraform. While more difficult to do, the Terraform configuration allows for more control over the resources created and can be easier to manage.
+- Agents have Action Groups that contain AWS Lambda functions, Knowledge Bases, and other resources.
+- Agents understand what tools are available to them by looking at the functions defined in the Action Group using a natural language prompt ([example](https://github.com/chaserx/bedrock_agents/blob/8677717adc323457152860466848efea7c678628/main.tf#L113)).
+
 ## Requirements
 
 - AWS account
@@ -48,7 +69,7 @@ This is a simple lambda function that returns a JSON object (stored in the `src/
 - [AWS CLI](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/index.html)
   - AWS account
   - Configured AWS CLI
-- [Python 3.13](https://www.python.org/downloads/) - The lambda function is written in Python 3.13. Use UV to install Python 3.13 and manage dependencies.
+- [Python 3.13](https://www.python.org/downloads/) - The lambda function is written in Python 3.13. Use [UV](https://docs.astral.sh/uv/getting-started/installation/) to install Python 3.13 and manage dependencies.
 - [jq](https://stedolan.github.io/jq/) (optional, for displaying the response in a readable format)
 
 ### Dependencies
@@ -72,17 +93,18 @@ module "lambda_function" {
   handler       = "src.fake_telematics.lambda_handler"
   runtime       = "python3.13"
   timeout       = 300
-  create_package = false
+  create_package = false # <== This is required to prevent Terraform from building a zip file when the zip file already exists
   local_existing_package = "./fake_telematics.zip"
-  ignore_source_code_hash = true
+  ignore_source_code_hash = true # <== This is required to prevent Terraform from tracking changes to the zip file
   depends_on = [
-    null_resource.uv_build
+    null_resource.uv_build # <== This is required to ensure the lambda function is built before it is deployed
   ]
 }
 
+# Build the lambda function zip file
 resource "null_resource" "uv_build" {
   provisioner "local-exec" {
-    command = "./build_lambda.sh"
+    command = "./build_lambda.sh" 
   }
 }
 ```
@@ -142,9 +164,31 @@ terraform apply plan.tfplan
 
 ### Testing the agent
 
-Test the agent in the AWS Bedrock console.
+#### Console
+
+Test the agent in the AWS Bedrock Agent console.
 
 ![bedrock-agent-console](./bedrock_agent_console.png)
+
+#### CLI
+
+You can also test the agent with an [Invoke Agent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) POST request to the [AWS Bedrock build-time endpoint](https://docs.aws.amazon.com/general/latest/gr/bedrock.html#bra-bt):
+
+## Troubleshooting  
+
+### Agent not understanding the tool
+
+If the agent is not understanding the tool, you can try the following:
+
+- Ensure the tool is defined in the agent's action group
+- Ensure the tool is defined in the agent's prompt
+
+### Understanding the agent's reasoning
+
+View the agent's reasoning in the AWS Bedrock Agent console by viewing the [trace](https://docs.aws.amazon.com/bedrock-agent/latest/userguide/agent-traces.html)
+
+![bedrock-agent-trace1](./tracing1.png)
+![bedrock-agent-trace2](./tracing2.png)
 
 ## Resources
 
